@@ -9,7 +9,7 @@ from HW_04_Ikenna_Ibezim_api import github_api
 
 class TestGetRepo(unittest.TestCase):
     def test_normal_response(self):
-        expected =['User: iamikenna', 'Repo: Employee-Appraisal-system Number of commits: 1', 'Repo: Git_api Number of commits: 5', 'Repo: SE_Testing Number of commits: 2', 'Repo: Stevens_Dev Number of commits: 3', 'Repo: tic-tac-toe Number of commits: 1', 'Repo: Triangle_testing Number of commits: 9']
+        expected =['User: iamikenna', 'Repo: Employee-Appraisal-system Number of commits: 1', 'Repo: Git_api Number of commits: 7', 'Repo: SE_Testing Number of commits: 2', 'Repo: Stevens_Dev Number of commits: 3', 'Repo: tic-tac-toe Number of commits: 1', 'Repo: Triangle_testing Number of commits: 9']
         self.assertEqual(github_api(), expected)
  
     def test_bad_user_name(self):
