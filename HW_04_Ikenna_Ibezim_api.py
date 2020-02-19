@@ -25,7 +25,7 @@ def github_api():
             me = todo_item['name']
             resp2 = requests.get(f"https://api.github.com/repos/{git_id}/{me}/commits") #Github API key for getting data on commits
             repo_info = json.loads(resp2.text)
-            output.append((f"Repo: {me} Number of commits: "))
+            output.append((f"Repo: {me} Number of commits: {len(repo_info)}"))
     except (TypeError, KeyError, IndexError):
         return 'unable to fetch commits from repo'
     return output
