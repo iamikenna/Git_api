@@ -18,7 +18,7 @@ class TestGetRepo(unittest.TestCase):
         # print(mock_simple_func)
         # print(HW_04_Ikenna_Ibezim_api.github_api)
         seen = github_api()
-        expected =['User: iamikenna', 'Repo: Employee-Appraisal-system Number of commits: 1', 'Repo: Git_api Number of commits: 12', 'Repo: SE_Testing Number of commits: 2', 'Repo: Stevens_Dev Number of commits: 3', 'Repo: tic-tac-toe Number of commits: 1', 'Repo: Triangle_testing Number of commits: 11']
+        expected =['User: iamikenna', 'Repo: Employee-Appraisal-system Number of commits: 1', 'Repo: Git_api Number of commits: 16', 'Repo: SE_Testing Number of commits: 2', 'Repo: Stevens_Dev Number of commits: 3', 'Repo: tic-tac-toe Number of commits: 1', 'Repo: Triangle_testing Number of commits: 11']
         mock_simple_func.return_value = seen
         result = HW_04_Ikenna_Ibezim_api.github_api()
         self.assertEqual(result, expected)
