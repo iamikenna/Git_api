@@ -5,4 +5,4 @@ install:
   - pip install requests
 # command to run tests
 script:
- - python -m unittest HW_04a_Ikenna_IbezimAPI_test
+ - python -m unittest HW_04a_Ikenna_IbezimAPI_test_2
